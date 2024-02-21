@@ -1,0 +1,4 @@
+theme: techblog-theme
+sass:
+  sass_dir: _sass
+  style: compressed

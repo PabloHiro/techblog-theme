@@ -1,0 +1,10 @@
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    color: $main-color;
+    background-color: $background-color;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
