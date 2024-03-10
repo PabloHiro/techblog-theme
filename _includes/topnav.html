@@ -1,6 +1,13 @@
 <div class="topnav">
-    <!-- TODO use parameters here -->
-    <button class="tablinks" onclick="openPage(event, 'Home')">Home</button>
-    <button class="tablinks" onclick="openPage(event, 'Cheatsheet')">Cheatsheet</button>
-    <button class="tablinks" onclick="openPage(event, 'Blog')">Blog</button>
+    <!--
+    {% for collection in site.collections %}
+    <button class="tablinks" onclick="openPage(event, '{{ collection.label }}')">{{ collection.label }}</button>
+    {% endfor %}
+    -->
+    {% for collection in site.collections %}
+    <!-- Remove default posts collection that comes with jekyll-->
+    {% if collection.label != 'posts' %}
+    <button class="tablinks" onclick="window.location.href='/{{ collection.label }}/index.html'">{{ collection.label | capitalize }}</button>
+    {% endif %}
+    {% endfor %}
 </div>

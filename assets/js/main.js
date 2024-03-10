@@ -1,4 +1,5 @@
-function openPage(event, pageName) {
+/*
+function openPage(event, collectionName) {
     var i, content, tablinks;
     content = document.getElementsByClassName("fadingcontent");
     for (i = 0; i < content.length; i++) {
@@ -8,6 +9,7 @@ function openPage(event, pageName) {
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(pageName).style.display = "block";
+    document.getElementById(collectionName).style.display = "block";
     event.currentTarget.className += " active";
 }
+*/

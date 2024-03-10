@@ -3,10 +3,18 @@
         {% include head.html %}
     </head>
     <body>
-        {% include topnav.html %}
-        <div>
-            {{ content }}
-        </div>
         {% include scripts.html %}
+        {% include header.html %}
+        {% include topnav.html %}
+        <div class="main">
+            {% include sidebar.html %}
+        <!--
+        <div id="{{ page.collection }}" class="fadingcontent">
+        </div>
+        -->
+            <div class="content">
+                {{ content }}
+            </div>
+        </div>
     </body>
 </html>

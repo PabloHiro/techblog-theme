@@ -1,4 +1,14 @@
 theme: techblog-theme
+# This setting includes the contents additional folders with the _underscore prefix
+collections:
+  posts:
+    output: false
+  home:
+    output: true
+  cheatsheet:
+    output: true
+  blog:
+    output: true
 sass:
   sass_dir: _sass
   style: compressed

@@ -1,25 +1,31 @@
 html {
-    /* sticky footer fix */
-    position: relative;
-    min-height: 100%;
+  height: 100%; //Needed for the sidebar
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    color: $main-color;
-    font-family: $global-font-family;
-    line-height: 1.5;
+  height: 100%; //Needed for the sidebar
+  margin: 0;
+  padding: 0;
+  color: $main-color;
+  font-family: $global-font-family;
+  line-height: 1.5;
+  &.overflow--hidden {
+    /* when primary navigation is visible, the content in the background won't scroll */
+    overflow: hidden;
+  }
+}
 
-    &.overflow--hidden {
-      /* when primary navigation is visible, the content in the background won't scroll */
-      overflow: hidden;
-    }
+.main {
+  height: 100%; //Needed for the sidebar
+  display: flex;
+  display: -webkit-flex;
+  justify-content: left;
 }
 
 /* Used to hide the primary navigation when the user activates an event */
 .show {
-    display: block;
+  display: block;
 }
 
 .fadingcontent {

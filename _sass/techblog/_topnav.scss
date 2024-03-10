@@ -1,6 +1,8 @@
 .topnav {
+    position: sticky;
+    height: 1em;
+    width: 100%;
     overflow: hidden;
-    border: 1px solid $border-color;
     background-color: $background-color;
 }
 
